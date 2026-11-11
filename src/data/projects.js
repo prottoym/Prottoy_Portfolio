@@ -136,6 +136,27 @@ export const projects = [
     repo: gh + '-Vehicle-Management-System-',
     demo: null,
   },
+    {
+    slug: 'book-nook',
+    name: 'BookNook',
+    image: '/assets/projects Photo/booknook.png',
+    short: 'Online library management system to explore, add, borrow and return books.',
+    overview: 'A full-stack library app where users can browse books, manage their own listings, borrow available books and return them. A separate Express API protects routes with Better Auth JWT verification.',
+    tech: ['Next.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Better Auth (JWT)'],
+    purpose: 'Make it easy to explore a shared book collection and manage borrowing and returning in one place.',
+    features: [
+      'Create, read, update and delete books',
+      'Search books by title and filter by category',
+      'Sort books by newest or oldest',
+      'JWT authentication verified through Better Auth JWKS',
+      'Owner-only update and delete for books',
+      'Borrow available books and view your borrowed books',
+      'Return borrowed books',
+    ],
+    improvements: ['Due dates and overdue reminders', 'Book cover image upload'],
+    repo: gh + 'BookNook',
+    demo: 'https://book-nook-5bc5.vercel.app/',
+  },
 ]
 
 export const bySlug = (s) => projects.find((p) => p.slug === s)
