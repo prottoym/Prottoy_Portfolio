@@ -2,6 +2,29 @@ const gh = 'https://github.com/prottoym/'
 
 export const projects = [
   {
+  slug: 'wedora',
+  name: 'Wedora',
+  image: '/assets/projects Photo/wedora.png',
+  short: 'Wedding planning marketplace connecting couples with trusted service providers, with customer, vendor and admin dashboards.',
+  overview: 'A full-stack platform where customers discover and book wedding services, vendors manage their listings and bookings, and admins moderate users, services and transactions.',
+  tech: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'shadcn/ui', 'Better Auth', 'MongoDB', 'Stripe', 'Zod', 'React Hook Form'],
+  purpose: 'Make wedding planning easier by bringing service discovery, booking and vendor management into one place.',
+  features: [
+    'Browse and search wedding services by category and location',
+    'Detailed service pages and booking requests',
+    'Booking history, statistics and cancellation of pending bookings',
+    'Vendor dashboard to create, update and delete services',
+    'Admin dashboard to block or unblock users and approve or reject service submissions',
+    'Role-based access control for customers, vendors and admins',
+    'Better Auth authentication with protected routes',
+    'Stripe premium subscription checkout, verification and cancellation',
+    'Responsive UI with dark mode, toast notifications and animations',
+  ],
+  improvements: ['Real-time booking notifications', 'Vendor reviews and ratings', 'Automated tests for booking and payment flows'],
+  repo: gh + 'wedora-client',
+  demo: 'https://wedora-topaz.vercel.app/',
+},
+  {
     slug: 'algorithm-visualizer',
     name: 'Algorithm Visualizer',
     image: '/assets/projects Photo/algo_vizz.png',
